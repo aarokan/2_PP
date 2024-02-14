@@ -5,6 +5,12 @@
 
 int main(int argc, string argv[])
 {
+    if (argc < 2 || argc > 3)
+    {
+        printf("Please enter only one number as an argument for example ./3_sequence 4 ")
+        return 1;
+    }
+    
     printf("argc %i", argc);
     string StrSize = argv[1];
 
