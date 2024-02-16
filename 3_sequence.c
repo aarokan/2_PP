@@ -28,4 +28,5 @@ int main(int argc, string argv[])
         printf("%i\n", sequence[i]);
     }
     printf("\n");
+    return 0;
 }
