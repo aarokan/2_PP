@@ -5,13 +5,12 @@
 
 int main(int argc, string argv[])
 {
-    if (argc < 2 || argc > 3)
+    if (argc != 2)
     {
-        printf("Please enter only one number as an argument for example ./3_sequence 4 ");
+        printf("Please enter only one number as an argument for example: \n./3_sequence 4 \n");
         return 1;
     }
     
-    printf("argc %i", argc);
     string StrSize = argv[1];
 
     // convert string to integer
@@ -20,7 +19,7 @@ int main(int argc, string argv[])
     int sequence[size];
 
     sequence[0] = 1;
-    printf("%i\n", sequence[0]);
+    printf("\n%i\n", sequence[0]);
 
     for (int i = 1; i < size; i++)
     {
